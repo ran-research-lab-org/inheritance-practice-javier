@@ -4,12 +4,15 @@
 #include "Employee.h"
 
 class SalariedEmployee : public Employee {
-public:
-    double yearlyPayment;
+    private:
+        double yearlyPayment;
+    
+    public:
 
-    SalariedEmployee(const std::string& name, int id, double yearlyPayment);
+        SalariedEmployee(const std::string& name, int id, double yearlyPayment);
 
-    double calculatePay() const override;
+        double calculatePay() const override;
+        double getYearlyPayment();
 };
 
 #endif
