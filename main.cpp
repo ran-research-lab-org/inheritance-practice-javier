@@ -47,8 +47,12 @@ int main() {
     // TODO: Print the results
     // Remember that you can use the range based for loop
     // Display the results of each type of employee
+    for (auto &val : hourlyEmp) {
+        cout << val.getType() << endl;
+    }
 
-    
-
+    for (auto &val : salariedEmp) {
+        cout << val.getType() << endl;
+    }
     return 0;
 }
