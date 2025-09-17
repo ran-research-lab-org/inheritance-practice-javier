@@ -47,12 +47,17 @@ int main() {
     // TODO: Print the results
     // Remember that you can use the range based for loop
     // Display the results of each type of employee
-    for (auto &val : hourlyEmp) {
-        cout << val.getType() << endl;
+    cout << "Hourly Employees: " << endl;
+    
+    for (int i = 0; i < hourlyEmp.size(); i++) {
+        cout << "ID: " << hourlyEmp[i].getId() << " | Name: " << hourlyEmp[i].getName() << " | Pay this period: $" << hourlyEmp[i].calculatePay() << endl;
     }
 
-    for (auto &val : salariedEmp) {
-        cout << val.getType() << endl;
+    cout << "Salaried Employees: " << endl;
+
+    for (int i = 0; i < salariedEmp.size(); i++) {
+        cout << "ID: " << salariedEmp[i].getId() << " | Name: " << salariedEmp[i].getName() << " | Pay this period: $" << salariedEmp[i].calculatePay() << endl;
     }
+    
     return 0;
 }

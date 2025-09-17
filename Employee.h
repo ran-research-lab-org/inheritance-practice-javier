@@ -26,6 +26,7 @@ public:
     // TODO: Getters
     string getType();
     string getName();
+    int getId();
 };
 
 #endif

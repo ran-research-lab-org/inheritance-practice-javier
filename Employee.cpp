@@ -10,3 +10,4 @@ Employee::Employee(const std::string& name, int id, const std::string& type) {
 /* IMPLEMENT GETTERS*/
 string Employee::getName() { return name; }
 string Employee::getType() { return type; }
+int Employee::getId() { return id; }
