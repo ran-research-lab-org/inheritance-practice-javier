@@ -9,13 +9,12 @@ class HourlyEmployee : public Employee {
         double workedHours;
 
     public:
-        HourlyEmployee();
         HourlyEmployee(const std::string& name, int id, double payPerHour, double workedHours);
 
         double calculatePay() const override;
 
-        double getPayPerHour();
-        double getWorkedHours();
+        double getPayPerHour() const;
+        double getWorkedHours() const;
 };
 
 #endif

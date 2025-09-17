@@ -10,4 +10,4 @@ double SalariedEmployee::calculatePay() const { return yearlyPayment / 26; }
 
 /* IMPLEMENT GETTERS*/
 
-double SalariedEmployee::getYearlyPayment() { return yearlyPayment; }
+double SalariedEmployee::getYearlyPayment() const { return yearlyPayment; }

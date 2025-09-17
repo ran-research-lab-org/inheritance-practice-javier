@@ -13,8 +13,8 @@ double HourlyEmployee::calculatePay() const { return payPerHour * workedHours; }
 
 /*GETTERS*/
 
-double HourlyEmployee::getPayPerHour() { return payPerHour; }
-double HourlyEmployee::getWorkedHours() { return workedHours; }
+double HourlyEmployee::getPayPerHour() const { return payPerHour; }
+double HourlyEmployee::getWorkedHours() const { return workedHours; }
 
 
 

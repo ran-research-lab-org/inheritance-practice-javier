@@ -49,14 +49,14 @@ int main() {
     // Display the results of each type of employee
     cout << "Hourly Employees: " << endl;
     
-    for (int i = 0; i < hourlyEmp.size(); i++) {
-        cout << "ID: " << hourlyEmp[i].getId() << " | Name: " << hourlyEmp[i].getName() << " | Pay this period: $" << hourlyEmp[i].calculatePay() << endl;
+    for (Employee &emp : hourlyEmp) {
+        cout << "ID: " << emp.getId() << " | Name: " << emp.getName() << " | Pay this period: $" << emp.calculatePay() << endl;
     }
 
     cout << "Salaried Employees: " << endl;
 
-    for (int i = 0; i < salariedEmp.size(); i++) {
-        cout << "ID: " << salariedEmp[i].getId() << " | Name: " << salariedEmp[i].getName() << " | Pay this period: $" << salariedEmp[i].calculatePay() << endl;
+    for (Employee &emp : salariedEmp) {
+        cout << "ID: " << emp.getId() << " | Name: " << emp.getName() << " | Pay this period: $" << emp.calculatePay() << endl;
     }
     
     return 0;

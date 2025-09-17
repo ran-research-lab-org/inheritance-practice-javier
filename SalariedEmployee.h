@@ -12,7 +12,7 @@ class SalariedEmployee : public Employee {
         SalariedEmployee(const std::string& name, int id, double yearlyPayment);
 
         double calculatePay() const override;
-        double getYearlyPayment();
+        double getYearlyPayment() const;
 };
 
 #endif
